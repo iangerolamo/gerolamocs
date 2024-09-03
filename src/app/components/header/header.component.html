@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <img class="image" src="/assets/images/a.jpg" alt="image">
+
+  <a class="navbar-brand" href="/">Caian S. Gerolamo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+    (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+    [ngClass]="{ 'show': isCollapsed }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link active" href="#papers-section">Papers <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#collaborators-section" >Collaborators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#about-section">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#media-section">Media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="../../../assets/resume_caian.pdf" target="_blank">CV</a>
+      </li>
+    </ul>
+  </div>
+</nav>
